@@ -54,27 +54,27 @@ module.exports = [
         precio: 103
     } , 
     {
-        imagen: "/images/barcelona.jpg" ,
+        imagen: "/images/barcelona.png" ,
         ciudad: "Barcelona" ,
         banderaPais: "🇪🇸"
     } ,
     {
-        imagen: "/images/madrid.jpg" ,
+        imagen: "/images/madrid.png" ,
         ciudad: "Madrid" ,
         banderaPais: "🇪🇸"
     } ,
     {
-        imagen: "/images/paris.jpg" ,
+        imagen: "/images/paris.png" ,
         ciudad: "Paris" ,
         banderaPais: "🇫🇷"
     } ,
     {
-        imagen: "/images/londres.jpg" ,
+        imagen: "/images/londres.png" ,
         ciudad: "Londres" ,
         banderaPais: "🇬🇧"
     } ,
     {
-        imagen: "/images/roma.jpg" ,
+        imagen: "/images/roma.png" ,
         ciudad: "Roma" ,
         banderaPais: "🇮🇹"
     }

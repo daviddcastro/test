@@ -9,7 +9,7 @@ module.exports = [
         tallaModelo: "S",
         decripcion: "Jersey de punto confeccionado en tejido 100% algodón. Corte recto, cuello alzado, abertura con cierre de media cremallera personalizada. Coderas grabadas con nuestro caballo y bordado en el pecho.",
         image: "https://lagarrocha.imgix.net/articulos2/2515/2/media-cremallera-con-coderas--arena.jpg?w=600&auto=format&q=80",
-        galeriaImagenes: [
+        galeriaImagenes:[
             "https://lagarrocha.imgix.net/articulos2/2515/2/media-cremallera-con-coderas--arena.jpg?w=600&auto=format&q=80",
             "https://lagarrocha.imgix.net/articulos2/2515/2/media-cremallera-con-coderas--arena.jpg?w=600&auto=format&q=80",
             "https://lagarrocha.imgix.net/articulos2/2515/2/media-cremallera-con-coderas--arena.jpg?w=600&auto=format&q=80",
