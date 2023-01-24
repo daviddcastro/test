@@ -1,81 +1,81 @@
 module.exports = [
     {
-        imagen: "" ,
+        imagen: "/images/hotel-abetos-del-maestre-escuela.jpg" ,
         nombreAlojamiento: "Hotel Abetos del Maestre Escuela" ,
         ciudadProvincia: "Cordoba" ,
         precio: 146
     } ,
     {
-        imagen: "" ,
+        imagen: "/images/hoteles-cibeles-playa.jpg" ,
         nombreAlojamiento: "Hotel Cibeles Playa" ,
         ciudadProvincia: "Gandía, Valencia" ,
         precio: 122
     } ,
     {
-        imagen: "" ,
+        imagen: "/images/Axel-Hotel-Madrid.jpg" ,
         nombreAlojamiento: "Axel Hotel Madrid" ,
         ciudadProvincia: "Madrid" ,
         precio: 178
     } ,
     {
-        imagen: "" ,
+        imagen: "/images/Motel-One-Barcelona-Ciutadella.jpg" ,
         nombreAlojamiento: "Motel One Barcelona-Ciutadella" ,
         ciudadProvincia: "Sant Martí, Barcelona" ,
         precio: 155
     } ,
     {
-        imagen: "" ,
+        imagen: "/images/Hilton-Garden-Inn-Sevilla.jpg" ,
         nombreAlojamiento: "Hilton Garden Inn Sevilla" ,
         ciudadProvincia: "Sevilla" ,
         precio: 118
     } ,
     {
-        imagen: "" ,
+        imagen: "/images/Holiday-Inn-Express-Málaga-Airport-an-IHG-Hotel.jpg" ,
         nombreAlojamiento: "Holiday Inn Express Málaga Airport, an IHG Hotel" ,
         ciudadProvincia: "Churriana, Málaga" ,
         precio: 75
     } ,
     {
-        imagen: "" ,
+        imagen: "/images/Sonder-Atala-Champs-Élysées.jpg" ,
         nombreAlojamiento: "Sonder Atala Champs-Élysées" ,
         ciudadProvincia: "Campos Elíseos, París" ,
         precio: 430
     } ,
     {
-        imagen: "" ,
+        imagen: "/images/La-Griffe-Roma.jpg" ,
         nombreAlojamiento: "La Griffe Roma" ,
         ciudadProvincia: "Roma" ,
         precio: 260
     } ,
     {
-        imagen: "" ,
-        nombreAlojamiento: "Royal Hotel" ,
-        ciudadProvincia: "Brent, Londres" ,
+        imagen: "/images/Phoenix-Hotel.jpg" ,
+        nombreAlojamiento: "Phoenix Hotel" ,
+        ciudadProvincia: "Londres" ,
         precio: 103
     } , 
     {
-        imagen: "" ,
-        ciudad: "" ,
-        banderaPais: ""
+        imagen: "/images/barcelona.jpg" ,
+        ciudad: "Barcelona" ,
+        banderaPais: "🇪🇸"
     } ,
     {
-        imagen: "" ,
-        ciudad: "" ,
-        banderaPais: ""
+        imagen: "/images/madrid.jpg" ,
+        ciudad: "Madrid" ,
+        banderaPais: "🇪🇸"
     } ,
     {
-        imagen: "" ,
-        ciudad: "" ,
-        banderaPais: ""
+        imagen: "/images/paris.jpg" ,
+        ciudad: "Paris" ,
+        banderaPais: "🇫🇷"
     } ,
     {
-        imagen: "" ,
-        ciudad: "" ,
-        banderaPais: ""
+        imagen: "/images/londres.jpg" ,
+        ciudad: "Londres" ,
+        banderaPais: "🇬🇧"
     } ,
     {
-        imagen: "" ,
-        ciudad: "" ,
-        banderaPais: ""
+        imagen: "/images/roma.jpg" ,
+        ciudad: "Roma" ,
+        banderaPais: "🇮🇹"
     }
 ]
