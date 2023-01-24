@@ -1,0 +1,10 @@
+{% macro recomendaciones(imagen, nombreAlojamiento, ciudadProvincia, precio) %}
+<a href="/alojamientos" class="w-96">
+    <img src="{{ imagen }}" alt="">
+    <div class="mt-2">
+        <p class="font-bold text-base">{{ nombreAlojamiento }}</p>
+        <p class="text-sm">{{ ciudadProvincia }}</p>
+        <p class="text-sm font-bold">Desde {{ precio }} €</p>
+    </div>
+</a>
+{% endmacro %}

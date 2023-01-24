@@ -1,0 +1,35 @@
+{% from "macros/recomendaciones.njk" import recomendaciones %}
+{% from "macros/otros-destinos.njk" import otrosDestinos %}
+
+{% macro recomedacionesSlider(recomendaciones) %}
+<div class="container">
+    <div class="block mt-20">
+        <h2 class="text-center font-bold text-2xl">RECOMENDACIONES</h2>
+        <div class="flex justify-around mt-10">
+            {% for recomendacion in recomendaciones %}
+                {{recomendaciones(recomendacion.imagen, recomendacion.nombreAlojamiento, recomendacion.ciudadProvincia, recomendacion.precio)}}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endmacro %}
+
+<div class="container">
+    <div class="block mt-24">
+        <h2 class="text-center font-bold text-2xl">OTROS DESTINOS</h2>
+        {% macro otrosdestinosUP(otrosDestinos) %}
+            <div class="flex mx-80 justify-around mt-8">
+                {% for otroDestino in otrosDestinos %}
+                    {{otrosDestinos(otroDestino.imagen, otroDestino.ciudad, otroDestino.banderaPais)}}
+                {% endfor %}
+            </div>
+        {% endmacro %}
+        {% macro otrosdestinosDAWN(otrosDestinos) %}
+            <div class="flex mx-32 justify-around mt-8">
+                {% for otroDestino in otrosDestinos %}
+                    {{otrosDestinos(otroDestino.imagen, otroDestino.ciudad, otroDestino.banderaPais)}}
+                {% endfor %}
+            </div>
+        {% endmacro %}
+    </div>
+</div>
