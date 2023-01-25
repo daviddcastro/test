@@ -1,0 +1,38 @@
+{% macro fichaAlojamiento(imagen, imagen1, imagen2, imagen3, alojamiento, ubicacion, adultos, noches, ofertaPersonas, tipoAlojamiento, personas, camas, precio, web) %}
+<div class="border-2 border-gray-500 mt-20 p-5 bg-white w-10/12">
+    <div class="flex">
+        <div class="block">
+            <img src="{{ imagen }}" class="w-1/1" alt="">
+            <div class="flex mt-5 justify-around">
+                <img src="{{ imagen1 }}" class="w-40" alt="">
+                <img src="{{ imagen2 }}" class="w-40" alt="">
+                <img src="{{ imagen3 }}" class="w-40" alt="">
+            </div>
+        </div>
+        <div class="block my-10 mx-20">
+            <h3 class="font-bold text-xl">{{ alojamiento}}</h3>
+            <div class="flex mt-3">
+                <img src="/images/location-marker.png" class="w-6 h-6" alt="">
+                <p class="text-base ml-2 mt-1">{{ ubicacion }}</p>
+            </div>
+            <p class="text-lg mt-2">{{ adultos }} adultos, {{ noches }} noches</p>
+            <div class="block mt-10 border-2 border-gray-500 p-5">
+                <h3 class="font-bold text-lg">Oferta recomendada para {{ ofertaPersonas }} personas</h3>
+                <p class="mt-2">{{ tipoAlojamiento }}</p>
+                <div class="flex mt-2">
+                    <span>Precio para: {{ personas }}</span>
+                    <img src="/images/users.png" class="w-6 ml-3" alt="">
+                </div>
+                <p class="mt-2">{{ camas }} Camas</p>
+                <div class="flex mt-2 justify-around">
+                    <p class="font-bold text-2xl">{{ precio }} €</p>
+                    <a href="/pagos">
+                        <button class="bg-sky-700 rounded-lg py-1 px-2 text-white">Reservar</button>
+                    </a>
+                </div>
+                <p class="text-xs text-center mt-5">{{ web }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}

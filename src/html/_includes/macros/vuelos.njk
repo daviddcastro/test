@@ -1,0 +1,49 @@
+{% macro vuelos(imagenCompañiaIda, horaSalidaIda, origenIda, fechaSalidaIda, tiempoIda, directoIda, horaLlegadaIda, destinoIda, fechaLlegadaIda, imagenCompañiaVuelta, horaSalidaVuelta, origenVuelta, fechaSalidaVuelta, tiempoVuelta, directoVuelta, horaLlegadaVuelta, destinoVuelta, fechaLlegadaVuelta, precio, producto) %}
+<div class="w-7/12 border-2 border-gray-500 p-5 bg-white">
+    <div class="flex justify-between mx-5">
+        <img src="{{ imagenCompañiaIda }}" class="rounded-full w-20" alt="">
+        <div class="mt-4">
+            <p class="font-bold text-xl">{{ horaSalidaIda }}</p>
+            <p>{{ origenIda }} {{ fechaSalidaIda }}</p>
+        </div>
+        <div class="mt-1 text-center">
+            <p>{{ tiempoIda }}</p>
+            <p>---------------------</p>
+            <p>{{ directoIda }}</p>
+        </div>
+        <div class="mt-4">
+            <p class="font-bold text-xl">{{ horaLlegadaIda }}</p>
+            <p>{{ destinoIda }} {{ fechaLlegadaIda }}</p>
+        </div>
+    </div>
+    <div class="flex justify-between mx-5 mt-10">
+        <img src="{{ imagenCompañiaVuelta }}" class="rounded-full w-20" alt="">
+        <div class="mt-4">
+            <p class="font-bold text-xl">{{ horaSalidaVuelta }}</p>
+            <p>{{ origenVuelta }} {{ fechaSalidaVuelta}}</p>
+        </div>
+        <div class="mt-1 text-center">
+            <p>{{ tiempoVuelta }}</p>
+            <p>---------------------</p>
+            <p>{{ directoVuelta }}</p>
+        </div>
+        <div class="mt-4">
+            <p class="font-bold text-xl">{{ horaLlegadaVuelta }}</p>
+            <p>{{ destinoVuelta }} {{ fechaLlegadaVuelta }}</p>
+        </div>
+    </div>
+</div>
+<div class="w-3/12 border-2 border-gray-500 border-l-0 p-5 bg-white">
+    <div class="mx-4">
+        <div class="flex justify-between mt-4">
+            <img src="/images/mochila.png" alt="">
+            <span>Incluido accesorio personal</span>
+        </div>
+        <p class="text-2xl font-bold mt-5">{{ precio }} €</p>
+        <p class="text-xs mt-5">Precio para todos los pasajeros</p>
+        <button class="p-2 bg-sky-700 rounded-lg mt-5">
+            <a href="{{ produto }}" class="text-white">Ver vuelo</a>
+        </button>
+    </div>
+</div>
+{% endmacro %}

@@ -1,0 +1,25 @@
+{% macro ofertasViajealojamiento(imagen, ciudad, alojamiento, estrella1, estrella2, estrella3, estrella4, estrella5, origen, dias, noches, incluye, precio, producto) %}
+<div class="border-2 border-gray-500 w-72 h-[450px] bg-white">
+    <img src="{{ imagen }}" alt="">
+    <div class="p-4">
+        <p class="font-bold">{{ ciudad }}</p>
+        <p class="text-sm">{{ alojamiento }}</p>
+        <div class="flex mt-1">
+            <img src="{{ estrella1 }}" class="w-5 h-5" alt="">
+            <img src="{{ estrella2 }}" class="w-5 h-5" alt="">
+            <img src="{{ estrella3 }}" class="w-5 h-5" alt="">
+            <img src="{{ estrella4 }}" class="w-5 h-5" alt="">
+            <img src="{{ estrella5 }}" class="w-5 h-5" alt="">
+        </div>
+        <p class="text-sm mt-1">Vuelos desde {{ origen }}</p>
+        <p class="text-sm">{{ dias }} días / {{ noches }} noches</p>
+        <p class="text-sm">{{ incluye }}</p>
+        <div class="flex justify-between mt-10">
+            <p class="font-bold text-sky-700 text-xl mt-1">Desde {{ precio }} €</p>
+            <button class=" bg-sky-700 text-white p-1 w-16 rounded-lg">
+                <a href="{{ producto }}">Ver</a>
+            </button>
+        </div>
+    </div>
+</div>
+{% endmacro %}

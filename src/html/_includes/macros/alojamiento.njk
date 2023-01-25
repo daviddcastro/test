@@ -1,0 +1,23 @@
+{% macro alojamiento(imagen, alojamiento, ubicacion, incluye, web, adultos, noches, precio, producto) %}
+<div class="p-5 mt-5 flex border-gray-500 border-2 bg-white w-10/12">
+    <div class="block w-96">
+        <img src="{{ imagen }}" class="w-96" alt="">
+    </div>
+    <div class="block ml-10 mt-14 w-2/5">
+        <h3 class="font-bold text-xl">{{ alojamiento }}</h3>
+        <div class="flex mt-3">
+            <img src="/images/location-marker.png" class="w-6 h-6" alt="">
+            <p class="text-base ml-2 mt-1">{{ ubicacion }}</p>
+        </div>
+        <p class="text-base mt-3">Incluye {{ incluye }}</p>
+        <p class="text-xs mt-4">{{ web }}</p>
+    </div>
+    <div class="block mt-14 w-1/4 p-5">
+        <p class="text-lg">{{ adultos }} Adultos, {{ noches }} noches</p>
+        <p class="text-2xl font-bold mt-2">{{ precio }} € </p>
+        <a href="{{ producto }}">
+            <button class="mt-5 rounded-lg p-2 bg-sky-700 text-white">Ver disponibilidad</button>
+        </a>
+    </div>
+</div>
+{% endmacro %}

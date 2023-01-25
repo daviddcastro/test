@@ -1,0 +1,11 @@
+{% macro recomendacionesVuelo(producto, imagen, ciudad, bandera, precio) %}
+<div class="border-2 border-gray-500 w-72 h-72 bg-white">
+    <a href="{{producto}}">
+        <img src="{{ imagen }}" alt="">
+        <div class="p-2">
+            <p class="text-xl mt-2">{{ ciudad }} {{ bandera }}</p>
+            <p class="text-xl">Desde {{ precio }} €</p>
+        </div>
+    </a>
+</div>
+{% endmacro %}
