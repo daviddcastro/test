@@ -1,0 +1,12 @@
+{% macro recomedacionesSlider(recomendaciones) %}
+<div class="container">
+    <div class="block mt-20">
+        <h2 class="text-center font-bold text-2xl">RECOMENDACIONES</h2>
+        <div class="flex justify-around mt-10">
+            {% for recomendacion in recomendaciones %}
+                {{recomendaciones(recomendacion.producto, recomendacion.imagen, recomendacion.nombreAlojamiento, recomendacion.ciudadProvincia, recomendacion.precio)}}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endmacro %}

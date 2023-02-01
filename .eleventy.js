@@ -7,7 +7,8 @@ module.exports = function (eleventyConfig) {
             input: "src/html",
             output: "dist",
             includes: "_includes",
-            data: "_data"
+            data: "_data",
+            macros: "_macros"
         },
         templateFormats: ["njk", "md", "html"],
         htmlTemplateEngine: "njk",

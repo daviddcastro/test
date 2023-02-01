@@ -1,4 +1,4 @@
-{% from "macros/recomendaciones.njk" import recomendaciones %}
+{% from "macros/recomendaciones.njk" import Recomendaciones %}
 {% from "macros/otros-destinos.njk" import otrosDestinos %}
 {% from "macros/ofertas-viaje-alojamiento.njk" import ofertasViajealojamiento %}
 {% from "macros/recomendaciones-vuelo.njk" import recomendacionesVuelo %}
@@ -6,38 +6,34 @@
 {% from "macros/ficha-producto-alojamiento.njk" import fichaAlojamiento %}
 {% from "macros/vuelos.njk" import vuelos %}
 
-{% macro recomedacionesSlider(recomendaciones) %}
+{% macro recomendacionesSlider(recomendaciones) %}
 <div class="container">
     <div class="block mt-20">
         <h2 class="text-center font-bold text-2xl">RECOMENDACIONES</h2>
         <div class="flex justify-around mt-10">
             {% for recomendacion in recomendaciones %}
-                {{recomendaciones(recomendacion.imagen, recomendacion.nombreAlojamiento, recomendacion.ciudadProvincia, recomendacion.precio)}}
+                {{Recomendaciones(recomendacion.producto, recomendacion.imagen, recomendacion.nombreAlojamiento, recomendacion.ciudadProvincia, recomendacion.precio)}}
             {% endfor %}
         </div>
     </div>
 </div>
 {% endmacro %}
 
-<div class="container">
-    <div class="block mt-24">
-        <h2 class="text-center font-bold text-2xl">OTROS DESTINOS</h2>
-        {% macro otrosdestinosUP(otrosDestinos) %}
-            <div class="flex mx-80 justify-around mt-8">
-                {% for otroDestino in otrosDestinos %}
-                    {{otrosDestinos(otroDestino.imagen, otroDestino.ciudad, otroDestino.banderaPais)}}
-                {% endfor %}
-            </div>
-        {% endmacro %}
-        {% macro otrosdestinosDAWN(otrosDestinos) %}
-            <div class="flex mx-32 justify-around mt-8">
-                {% for otroDestino in otrosDestinos %}
-                    {{otrosDestinos(otroDestino.imagen, otroDestino.ciudad, otroDestino.banderaPais)}}
-                {% endfor %}
-            </div>
-        {% endmacro %}
+{% macro otrosdestinosUP(otrosDestinos) %}
+    <div class="flex mx-80 justify-around mt-8">
+        {% for otroDestino in otrosDestinos %}
+            {{otrosDestinos(otroDestino.imagen, otroDestino.ciudad, otroDestino.banderaPais)}}
+        {% endfor %}
     </div>
-</div>
+{% endmacro %}
+
+{% macro otrosdestinosDAWN(otrosDestinos) %}
+    <div class="flex mx-10 justify-around mt-8">
+        {% for otroDestino in otrosDestinos %}
+            {{otrosDestinos(otroDestino.imagen, otroDestino.ciudad, otroDestino.banderaPais)}}
+        {% endfor %}
+    </div>
+{% endmacro %}
 
 {% macro ofertasViajealojamientoSlider(ofertas) %}
 <div class="container mt-20">

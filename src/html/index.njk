@@ -1,8 +1,9 @@
 {% extends "layouts/default.njk" %}
+{% from "macros/sliders.njk" import recomendacionesSlider %}
 
 {% block content %}
 {% include "partials/menu-busqueda-vuelos.njk" %}
-{% include "partials/recomendaciones.njk" %}
+    {{ recomendacionesSlider(recomendaciones)}}
 {% include "partials/otros-destinos.njk" %}
 {% endblock %}
 

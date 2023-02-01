@@ -1,5 +1,5 @@
-{% macro recomendaciones(imagen, nombreAlojamiento, ciudadProvincia, precio) %}
-<a href="/alojamientos" class="w-96">
+{% macro Recomendaciones(producto, imagen, nombreAlojamiento, ciudadProvincia, precio) %}
+<a href="{{ producto }}" class="w-96">
     <img src="{{ imagen }}" alt="">
     <div class="mt-2">
         <p class="font-bold text-base">{{ nombreAlojamiento }}</p>
